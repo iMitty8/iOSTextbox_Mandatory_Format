@@ -45,6 +45,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self loadFormatForTextView];
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+}
+
+#pragma Method Implementation
+-(void)loadFormatForTextView {
     
     openFormat = @"(";
     closeFormat = @")";
@@ -61,11 +70,6 @@
     }
     inputTest = [phoneFormatString copy];
     [_tbPhoneNo setText:phoneFormatString];
-    
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
 }
 
 
